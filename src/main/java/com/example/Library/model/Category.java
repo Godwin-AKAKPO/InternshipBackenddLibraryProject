@@ -54,6 +54,13 @@ public class Category {
     public void setBooks(List<Book> books) {
         this.books = books;
     }
+    @Transient // Indique à JPA de ne pas créer de colonne en BDD
+    private int bookCount;
+
+    // Modifie le getter pour qu'il calcule la taille de la liste
+    public int getBookCount() {
+        return (this.books != null) ? this.books.size() : 0;
+    }
 }
 
 

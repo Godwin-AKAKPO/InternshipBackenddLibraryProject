@@ -19,6 +19,7 @@ public class CategoryService {
         this.categoryRepository = categoryRepository;
     }
 
+    //TAF : Faire en sorte qu'ici le nbr de livre dans chaque catégorie soit également retourné pour pouvoir l'afficher au frontend
     public List<Category> getAllCategories() {
         return categoryRepository.findAll();
     }
