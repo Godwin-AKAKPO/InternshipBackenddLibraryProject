@@ -7,7 +7,6 @@ public class BookDTO {
     private Long categoryId;
     private boolean isAvailable;
 
-    // Getters et Setters
     public String getTitle() {
         return title;
     }
